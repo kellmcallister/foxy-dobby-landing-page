@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 Final Project McAllister</title>
+
+    <style>
+      h1,
+      h2,
+      h5,
+      p {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px auto;
+        line-height: 1.5;
+        color: #6c5b7c;
+      }
+      p {
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 38px;
+        text-decoration: underline;
+      }
+      h2 {
+        font-size: 28px;
+        text-shadow: 5px 5px 10px rgba(250, 250, 250, 0.5);
+        color: #c06c84;
+      }
+      h5 {
+        font-size: 14px;
+      }
+      body {
+        background: linear-gradient(
+          123.5deg,
+          rgb(244, 219, 251) 29.3%,
+          rgb(255, 214, 214) 67.1%
+        );
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #6c5b7c;
+        background-color: #f67280;
+        color: #6c5b7c;
+        padding: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(250, 250, 250, 0.5);
+      }
+      ul {
+        list-style: none;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        color: #6c5b7c;
+      }
+      hr {
+        background-color: #f67280;
+        border: none;
+        height: 5px;
+        max-width: 600px;
+        border-radius: 5px;
+      }
+      .traits {
+        font-weight: normal;
+      }
+      .headshots {
+        text-align: center;
+      }
+      .foxy,
+      .dobby {
+        margin: 10px 40px;
+        width: 200px;
+        height: 230px;
+        border-radius: 5px;
+      }
+
+      .foxyDobbyJerseys {
+        display: block;
+        margin: 0 auto;
+        width: 480px;
+        height: 358px;
+        border-radius: 5px;
+      }
+      .donate-link {
+        text-align: center;
+        display: block;
+        font-size: 14px;
+        background-color: #f8b595;
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 63%;
+        color: #6c5b7c;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .donate-link:hover {
+        border: 6px dashed #6c5b7c;
+        border-color: #6c5b7c;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 30px;
+        transition: all 1.5s ease-in-out;
+        cursor: pointer;
+      }
+      .pageContent {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pageContent">
+      <section>
+        <h1>Meet My Dogs</h1>
+
+        <h2>Foxy & Dobby</h2>
+        <div class="headshots">
+          <img
+            class="foxy"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/433/original/foxySunshine.jpg?1675813491"
+            alt="Foxy Headshot"
+          />
+
+          <img
+            class="dobby"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/430/original/dobbyheadshot.jpg?1675811923"
+            alt="Dobby Headshot"
+          />
+        </div>
+        <ul>
+          <li>
+            👈 Foxy: <span class="traits">Energetic, Anxious, Loyal</span>
+          </li>
+          <li>
+            Dobby: <span class="traits">Cuddly, A Chewer, Protective 👉</span>
+          </li>
+        </ul>
+        <p>
+          I adopted Foxy and Dobby in November 2020 from friends who were
+          fostering them. They were born in the same litter in August 2019. You
+          might wonder why they look different if born in the same litter.
+          <br />
+          That's because they have the
+          <em>same mom (a chihuahua), but different dads</em>.
+          <br />
+          Foxy's dad is a terrier and Dobby's dad is a dachshund.
+        </p>
+
+        <button>Click for a treat</button>
+        <br />
+        <strong
+          ><a
+            href="https://www.austinpetsalive.org/donate"
+            target="_blank"
+            title="Donate to: Austin Pets Alive!"
+            class="donate-link"
+            >Donate to: Austin Pets Alive!
+          </a></strong
+        >
+        <br />
+        <img
+          class="foxyDobbyJerseys"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/427/original/foxydobbyJerseys.jpg?1675810022"
+          alt="Foxy and Dobby in Jerseys"
+        />
+        <br />
+        <hr />
+        <h5>🐶 This page was built by Kelly McAllister 🐶</h5>
+      </section>
+    </div>
+    <script>
+      function tailWag() {
+        let name = prompt("What is your name?");
+        let own = prompt("Do you have pets?");
+        let cuteRate = prompt(
+          "On a scale of 1 (not cute) to 10 (very cute) rate Foxy and Dobby"
+        );
+        if (cuteRate >= 7) {
+          alert(
+            "I think they're hella cute too, " + name + "! But, I'm biased 😊🐶"
+          );
+        } else {
+          alert("That's too bad, " + name + ". You must be a cat person 😻");
+        }
+      }
+      let tailWagButton = document.querySelector("button");
+      tailWagButton.addEventListener("click", tailWag);
+    </script>
+  </body>
+</html>
